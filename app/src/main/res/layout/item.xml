@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardid"
+    style="@style/cardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:checkable="false"
+    android:clickable="true"
+
+    android:elevation="16dp"
+    android:focusable="true"
+    android:padding="0dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:id="@+id/allidRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imgCard"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+
+            android:adjustViewBounds="true"
+            android:focusable="true"
+            android:minWidth="130dp"
+            android:minHeight="130dp"
+            android:scaleType="fitCenter"
+            app:cardElevation="28dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/lky" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:autoSizeMinTextSize="8dp"
+
+                android:autoSizeTextType="uniform"
+                android:maxLines="3"
+                android:text="Impressió, sol naixent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:autoSizeMinTextSize="8dp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="2"
+                android:text="Claude Monet"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
